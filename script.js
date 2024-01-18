@@ -10,11 +10,16 @@ submitBtn.addEventListener("click", function (e) {
   let quarter = 4;
   let years = 35;
   let percentageGrowth = 1.0175;
-  let divided = 0.46;
+  let dividend = 0.46;
   let investment = 59;
+  let shares = investment / stockPrice;
   for (let i = 0; i < years; i++) {
     for (let j = 0; j < quarter; j++) {
-      console.log(`In Q${j + 1} of year ${years}, your investment is worth `);
+      investment = (investment + shares * dividend) * percentageGrowth;
+      console.log(
+        `In Q${j + 1} of year ${years}, your investment is worth ${investment} `
+      );
+      dividend = dividend + 0.02;
     }
   }
 });
