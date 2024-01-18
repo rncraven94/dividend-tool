@@ -6,3 +6,5 @@ submitBtn.addEventListener("submit", function (e) {
   e.preventDefault();
   console.log(1);
 });
+
+console.log(1);
