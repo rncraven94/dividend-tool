@@ -17,7 +17,9 @@ submitBtn.addEventListener("click", function (e) {
     for (let j = 0; j < quarter; j++) {
       investment = (investment + shares * dividend) * percentageGrowth;
       console.log(
-        `In Q${j + 1} of year ${years}, your investment is worth ${investment} `
+        `In Q${
+          j + 1
+        } of year ${years}, your investment is worth ${investment}, and during this period your dividend paid to you is equal to ${dividend} `
       );
       dividend = dividend + 0.02;
     }
