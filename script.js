@@ -3,6 +3,7 @@ console.log(1);
 
 const submitBtn = document.getElementById("submitInteger");
 const enterStockPrice = document.getElementById("integerInput");
+const enterSharePrice = document.getElementById("shareInput");
 
 submitBtn.addEventListener("click", function (e) {
   e.preventDefault();
@@ -15,6 +16,7 @@ submitBtn.addEventListener("click", function (e) {
   let dividend = 0.46;
   let investment = 59;
   let shares = investment / stockPrice;
+  shares = enterSharePrice.value;
   for (let i = 0; i < years; i++) {
     for (let j = 0; j < quarter; j++) {
       investment = (investment + shares * dividend) * percentageGrowth;
