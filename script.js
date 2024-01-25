@@ -15,7 +15,7 @@ submitBtn.addEventListener("click", function (e) {
   let years = 35;
   let percentageGrowth = 1.0175;
   let dividend = 0.46;
-  dividend = eneterDividend.value;
+  // dividend = eneterDividend.value;
   let investment = 59;
   let shares = investment / stockPrice;
   shares = enterSharePrice.value;
