@@ -4,7 +4,7 @@ console.log(1);
 const submitBtn = document.getElementById("submitInteger");
 const enterStockPrice = document.getElementById("integerInput");
 const enterSharePrice = document.getElementById("shareInput");
-const eneterDividend = document.getElementById("dividendInput");
+const eneterDividend = document.getElementById("divedendInput");
 
 submitBtn.addEventListener("click", function (e) {
   e.preventDefault();
